@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets - Bacem Kadri | ISET Sfax</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">Bacem Kadri</a>
+      <button type="button" class="burger" id="burgerBtn" aria-label="Ouvrir le menu">☰</button>
+      <nav id="navMenu">
+        <a href="index.html">Accueil</a>
+        <a href="projets.html" class="active">Projets</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <span class="badge">Travaux &amp; Réalisations</span>
+      <h1>Mes projets</h1>
+      <p>Filtrez mes réalisations par domaine :</p>
+
+      <div class="filters">
+        <button type="button" class="filter-btn active" data-cat="all">Tous (6)</button>
+        <button type="button" class="filter-btn" data-cat="c">Algo &amp; C (3)</button>
+        <button type="button" class="filter-btn" data-cat="web">Web (3)</button>
+      </div>
+
+      <div class="grid">
+        <!-- Projet Web en ligne -->
+        <article class="card project" data-cat="web">
+          <span class="tag">Web • En ligne</span>
+          <h2>Dar El Halwa</h2>
+          <p>Site vitrine responsive pour une pâtisserie traditionnelle, hébergé sur GitHub Pages.</p>
+          <a href="https://bacem30k.github.io/dar-el-halwa-/" target="_blank" rel="noopener" class="btn">Visiter le site</a>
+        </article>
+
+        <article class="card project" data-cat="web">
+          <span class="tag">HTML5 &amp; CSS3</span>
+          <h2>Portfolio personnel</h2>
+          <p>Site multi-pages mobile-first avec thème sombre, Flexbox, CSS Grid et accessibilité.</p>
+          <a href="index.html" class="btn btn-light">Voir l'accueil</a>
+        </article>
+
+        <article class="card project" data-cat="web">
+          <span class="tag">JavaScript DOM</span>
+          <h2>Filtre &amp; Validation JS</h2>
+          <p>Filtrage dynamique par catégorie et contrôle de formulaire avec expressions régulières.</p>
+          <a href="contact.html" class="btn btn-light">Tester le formulaire</a>
+        </article>
+
+        <!-- Projets Algo & C -->
+        <article class="card project" data-cat="c">
+          <span class="tag">Langage C</span>
+          <h2>Gestion des notes</h2>
+          <p>Calcul de moyenne, note maximale/minimale et classement des étudiants en console.</p>
+        </article>
+
+        <article class="card project" data-cat="c">
+          <span class="tag">Algorithmique</span>
+          <h2>Tri &amp; Recherche</h2>
+          <p>Tri par sélection, tri à bulles et recherche dichotomique sur des tableaux d'entiers.</p>
+        </article>
+
+        <article class="card project" data-cat="c">
+          <span class="tag">Langage C</span>
+          <h2>Calculatrice console</h2>
+          <p>Menu interactif en C gérant les opérations, la factorielle et les nombres premiers.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Bacem Kadri — ISET Sfax (TI1)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

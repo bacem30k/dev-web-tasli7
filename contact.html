@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Bacem Kadri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">Bacem Kadri</a>
+      <button type="button" class="burger" id="burgerBtn" aria-label="Menu">☰</button>
+      <nav id="navMenu">
+        <a href="index.html">Accueil</a>
+        <a href="projets.html">Projets</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Me contacter</h1>
+      <p>Remplissez ce formulaire pour m'envoyer un message.</p>
+
+      <form id="contactForm" class="card" novalidate>
+        <label for="nom">Nom complet *</label>
+        <input type="text" id="nom" placeholder="Votre nom">
+        <small class="error" id="nomErr"></small>
+
+        <label for="email">Adresse e-mail *</label>
+        <input type="email" id="email" placeholder="exemple@email.com">
+        <small class="error" id="emailErr"></small>
+
+        <label for="msg">Message *</label>
+        <textarea id="msg" rows="4" placeholder="Votre message..."></textarea>
+        <small class="error" id="msgErr"></small>
+
+        <button type="submit" class="btn">Envoyer</button>
+        <p class="success" id="successMsg"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Bacem Kadri — ISET Sfax</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
